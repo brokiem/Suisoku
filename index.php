@@ -97,7 +97,7 @@ if ($math === "*") {
         i += 10;
         document.getElementById('progress-bar').style.width = i + '%';
 
-        if (i === 110) {
+        if (i === 100) {
             timeout = setTimeout(function () {
                 Swal.fire(
                     "Time's up!",
