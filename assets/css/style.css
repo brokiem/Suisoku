@@ -1,0 +1,10 @@
+body {
+    background-color: #1c1c1c !important;
+    color: #c9d1d9 !important;
+}
+
+.card-bg-dark {
+    background-color: #292929 !important;
+    color: #c9d1d9 !important;
+    border: transparent !important;
+}
