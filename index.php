@@ -52,7 +52,7 @@ if ($math === "*") {
     $nom2 = mt_rand(1, 5);
 }
 ?>
-<br><br><br><br>
+<br><br><br>
 <div class="container">
     <div class="progress">
         <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0;" aria-valuenow="0"
@@ -95,9 +95,9 @@ if ($math === "*") {
     let timeout = null;
     const interval = setInterval(function () {
         document.getElementById('progress-bar').style.width = i + '%';
-        i += 10;
+        i += 1;
 
-        if (i === 110) {
+        if (i === 100) {
             timeout = setTimeout(function () {
                 Swal.fire(
                     "Time's up!",
@@ -106,13 +106,13 @@ if ($math === "*") {
                 ).then(() => {
                     window.location.reload();
                 })
-            }, 300);
+            }, 500);
         }
 
         if (i > 100) {
             clearInterval(interval);
         }
-    }, 1000);
+    }, 100);
 </script>
 </body>
 
