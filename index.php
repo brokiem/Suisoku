@@ -74,7 +74,7 @@ if ($math === "*") {
         };
 
         $answers = [];
-        $answers[0] = $question;
+        $answers[0] = (int)$question;
         $answers[1] = $nom1 + mt_rand(1, 10) + $nom2;
         $answers[2] = $nom1 + mt_rand(5, 8) + $nom2 + mt_rand(0, 2);
         $answers[3] = $nom1 + $nom2 - mt_rand(1, 15);
