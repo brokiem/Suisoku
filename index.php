@@ -95,9 +95,9 @@ if ($math === "*") {
     let timeout = null;
     const interval = setInterval(function () {
         document.getElementById('progress-bar').style.width = i + '%';
-        i += 1;
+        i += 10;
 
-        if (i === 100) {
+        if (i === 110) {
             timeout = setTimeout(function () {
                 Swal.fire(
                     "Time's up!",
@@ -106,13 +106,13 @@ if ($math === "*") {
                 ).then(() => {
                     window.location.reload();
                 })
-            }, 500);
+            }, 300);
         }
 
         if (i > 100) {
             clearInterval(interval);
         }
-    }, 100);
+    }, 1000);
 </script>
 </body>
 
