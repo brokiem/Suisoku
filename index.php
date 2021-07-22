@@ -94,8 +94,8 @@ if ($math === "*") {
     let i = 0;
     let timeout = null;
     const interval = setInterval(function () {
-        document.getElementById('progress-bar').style.width = i + '%';
         i += 10;
+        document.getElementById('progress-bar').style.width = i + '%';
 
         if (i === 110) {
             timeout = setTimeout(function () {
